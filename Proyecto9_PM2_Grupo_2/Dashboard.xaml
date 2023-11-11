@@ -1,0 +1,58 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto9_PM2_Grupo_2.Dashboard"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Título fijo -->
+        <Label Grid.Row="0" Text="Floresteria Margarita" FontSize="24" TextColor="DarkBlue" HorizontalOptions="Center" Margin="0,20,0,20" />
+
+        <!-- Contenido desplazable -->
+        <ScrollView Grid.Row="1">
+            <StackLayout Padding="10">
+                <!-- Resto del contenido -->
+                <!-- Categoría 1 -->
+                <Frame CornerRadius="10" HasShadow="True" BackgroundColor="White" Margin="0,0,0,20">
+                    <StackLayout>
+                        <Image Source="flor1.jpg" Aspect="AspectFill" HeightRequest="150" />
+                        <Label Text="Flowers Box + Chocolates" FontSize="16" TextColor="Black" HorizontalOptions="Center" Margin="0,10,0,10" />
+                        <Label Text="Lps. 500" FontSize="14" TextColor="Green" HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+
+                <!-- Categoría 2 -->
+                <Frame CornerRadius="10" HasShadow="True" BackgroundColor="White" Margin="0,0,0,20">
+                    <StackLayout>
+                        <Image Source="flor2.jpg" Aspect="AspectFill" HeightRequest="150" />
+                        <Label Text="Flowers Box + Chocolates + Peluche" FontSize="16" TextColor="Black" HorizontalOptions="Center" Margin="0,10,0,10" />
+                        <Label Text="Lps. 750" FontSize="14" TextColor="Green" HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+
+                <!-- Categoría 3 -->
+                <Frame CornerRadius="10" HasShadow="True" BackgroundColor="White" Margin="0,0,0,20">
+                    <StackLayout>
+                        <Image Source="flor3.jpg" Aspect="AspectFill" HeightRequest="150" />
+                        <Label Text="Flowers 12 Rosas" FontSize="16" TextColor="Black" HorizontalOptions="Center" Margin="0,10,0,10" />
+                        <Label Text="Lps. 350" FontSize="14" TextColor="Green" HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+
+                <!-- Categoría 4 -->
+                <Frame CornerRadius="10" HasShadow="True" BackgroundColor="White" Margin="0,0,0,20">
+                    <StackLayout>
+                        <Image Source="flor4.jpg" Aspect="AspectFill" HeightRequest="150" />
+                        <Label Text="Margaritas + Peluche" FontSize="16" TextColor="Black" HorizontalOptions="Center" Margin="0,10,0,10" />
+                        <Label Text="Lps. 480" FontSize="14" TextColor="Green" HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
